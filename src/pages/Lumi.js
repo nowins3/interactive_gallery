@@ -29,7 +29,7 @@ const Lumi = () => {
                     <directionalLight position={[0, 0, 1]} intensity={2} />
                     <PerspectiveCamera makeDefault position={[0, 0, -1]}  ref={cameraRef} >
                         <Background position={[0, 0, -100]} />
-                    </PerspectiveCamera>
+                    </PerspectiveCamera> 
                     <ScrollController />
                     {/* <Gallery /> */}
                     {/* <Message /> */}

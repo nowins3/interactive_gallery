@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 💌 Interactive Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A 3D interactive photo gallery I built as a birthday present for my girlfriend. It's a short journey through three scenes, built with React Three Fiber and custom GLSL shaders.
 
-## Available Scripts
+> **[Live demo →](YOUR_DEMO_LINK_HERE)** *(optional: remove if the project is private)*
 
-In the project directory, you can run:
+![Screenshot or GIF of the project](./docs/preview.gif)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ The Experience
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The gallery unfolds in three parts:
 
-### `npm test`
+1. **The Room**: A 3D recreation of her room, filled with sentimental objects and a board of love notes pinned to the wall.
+2. **The Web**: A maze-like web of our photos together, where you drift through memories connected to one another.
+3. **The Tunnel**: A tunnel lined with pictures of her, the ones I love most.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Built With
 
-### `npm run build`
+- [React](https://react.dev/): UI and app structure
+- [Three.js](https://threejs.org/) via [React Three Fiber](https://docs.pmnd.rs/react-three-fiber): 3D scenes in React
+- **GLSL**: custom vertex and fragment shaders for the visual effects
+- **Vanilla JavaScript**: for the parts that didn't need React, like [describe, e.g. camera movement, scene transitions, input handling]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*(Add any other libraries you used, such as `@react-three/drei`, `gsap`, `vite`, and so on.)*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/) (v[XX] or newer)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone the repository
+git clone https://github.com/[your-username]/[repo-name].git
+cd [repo-name]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Start the dev server
+npm run dev
+```
 
-## Learn More
+Then open `http://localhost:[PORT]` in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Build for production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+├── scenes/        # Room, Web, and Tunnel scenes
+├── shaders/       # Custom GLSL vertex and fragment shaders
+├── components/    # Reusable React components
+├── utils/         # Vanilla JS helpers
+└── assets/        # Models, textures, and images
+```
 
-### Analyzing the Bundle Size
+*(Adjust to match your actual folders.)*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 Making It Your Own
 
-### Making a Progressive Web App
+Want to build something similar for someone you love?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Replace the images in `[path/to/images]` with your own photos.
+2. Edit the love notes in `[path/to/notes-file]`.
+3. Swap out the 3D objects in the room scene with things that mean something to you.
 
-### Advanced Configuration
+## 🔒 A Note on Privacy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The photos and messages in this project are personal, so they are **not included** in this repository. The project uses placeholder images instead. *(Edit or remove this section depending on what you've done.)*
 
-### Deployment
+## 🎮 Controls
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Action | Input |
+| --- | --- |
+| Look around | [Mouse drag / touch] |
+| Move | [Scroll / arrow keys / click] |
+| Interact | [Click on objects] |
 
-### `npm run build` fails to minify
+*(Fill in the real controls.)*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+[MIT](LICENSE) *(or whichever license you choose)*
+
+## 💖 Dedication
+
+Made with love for [her name or "my girlfriend"], on her birthday.

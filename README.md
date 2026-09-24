@@ -2,12 +2,6 @@
 
 A 3D interactive photo gallery I built as a birthday present for my girlfriend. It's a short journey through three scenes, built with React Three Fiber and custom GLSL shaders.
 
-> **[Live demo →](YOUR_DEMO_LINK_HERE)** *(optional: remove if the project is private)*
-
-![Screenshot or GIF of the project](./docs/preview.gif)
-
----
-
 ## ✨ The Experience
 
 The gallery unfolds in three parts:
